@@ -17,9 +17,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.titles = [NSArray arrayWithObjects: @"Title1",
-                   @"Title2",
-                   nil];
+    NSDictionary *blogPost1 = [NSDictionary dictionaryWithObjectsAndKeys: @"The title", @"title", @"Mike Schubert", @"author", nil];
+    NSDictionary *blogPost2 = [NSDictionary dictionaryWithObjectsAndKeys: @"The second title", @"title", @"Celisa Schubert", @"author", nil];
+    NSDictionary *blogPost3 = [NSDictionary dictionaryWithObjectsAndKeys: @"The third title", @"title", @"Madision Hamel", @"author", nil];
+    
+    self.blogPosts = [NSArray arrayWithObjects: blogPost1, blogPost2, blogPost3, nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -38,7 +40,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return self.titles.count;
+    return self.blogPosts.count;
 }
 
 
@@ -47,8 +49,9 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.titles objectAtIndex:indexPath.row];
-    
+    NSDictionary *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+    cell.textLabel.text = [blogPost valueForKey:@"title"];
+    cell.detailTextLabel.text = [blogPost valueForKey:@"author"];
     return cell;
 }
 
