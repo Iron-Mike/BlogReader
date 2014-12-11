@@ -12,6 +12,7 @@
 		272326EE1A39D3420014323E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 272326ED1A39D3420014323E /* Images.xcassets */; };
 		272326FD1A39D3420014323E /* Blog_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272326FC1A39D3420014323E /* Blog_ReaderTests.m */; };
 		272327071A3A17DF0014323E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272327061A3A17DF0014323E /* MainStoryboard.storyboard */; };
+		2723270A1A3A21A80014323E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272327091A3A21A80014323E /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 		272326FB1A39D3420014323E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		272326FC1A39D3420014323E /* Blog_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blog_ReaderTests.m; sourceTree = "<group>"; };
 		272327061A3A17DF0014323E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		272327081A3A21A80014323E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		272327091A3A21A80014323E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		272326D41A39D3420014323E = {
 			isa = PBXGroup;
 			children = (
+				272327081A3A21A80014323E /* TableViewController.h */,
+				272327091A3A21A80014323E /* TableViewController.m */,
 				272326DF1A39D3420014323E /* Blog Reader */,
 				272326F91A39D3420014323E /* Blog ReaderTests */,
 				272326DE1A39D3420014323E /* Products */,
@@ -210,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2723270A1A3A21A80014323E /* TableViewController.m in Sources */,
 				272326E61A39D3420014323E /* AppDelegate.m in Sources */,
 				272326E31A39D3420014323E /* main.m in Sources */,
 			);
