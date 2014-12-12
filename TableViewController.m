@@ -17,11 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDictionary *blogPost1 = [NSDictionary dictionaryWithObjectsAndKeys: @"The title", @"title", @"Mike Schubert", @"author", nil];
-    NSDictionary *blogPost2 = [NSDictionary dictionaryWithObjectsAndKeys: @"The second title", @"title", @"Celisa Schubert", @"author", nil];
-    NSDictionary *blogPost3 = [NSDictionary dictionaryWithObjectsAndKeys: @"The third title", @"title", @"Madision Hamel", @"author", nil];
+    NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary"];
+    NSData *jsonData = [NSData dataWithContentsOfURL:blogUrl];
     
-    self.blogPosts = [NSArray arrayWithObjects: blogPost1, blogPost2, blogPost3, nil];
+    NSError *error = nil;
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+    
+    self.blogPosts = [dataDictionary objectForKey:@"posts"];
 }
 
 - (void)didReceiveMemoryWarning {
