@@ -7,6 +7,7 @@
 //
 
 #import "TableViewController.h"
+#import "BlogPost.h"
 
 @interface TableViewController ()
 
@@ -16,6 +17,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    BlogPost *blogPost = [[BlogPost alloc] init];
+    blogPost.title = @"Some title";
+    blogPost.author = @"Some author";
+    
     
     NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary"];
     NSData *jsonData = [NSData dataWithContentsOfURL:blogUrl];

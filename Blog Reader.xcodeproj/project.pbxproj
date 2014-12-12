@@ -13,6 +13,7 @@
 		272326FD1A39D3420014323E /* Blog_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 272326FC1A39D3420014323E /* Blog_ReaderTests.m */; };
 		272327071A3A17DF0014323E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272327061A3A17DF0014323E /* MainStoryboard.storyboard */; };
 		2723270A1A3A21A80014323E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272327091A3A21A80014323E /* TableViewController.m */; };
+		27AC7EB91A3A86AD0070E8E8 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC7EB81A3A86AD0070E8E8 /* BlogPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,8 @@
 		272327061A3A17DF0014323E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		272327081A3A21A80014323E /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TableViewController.h; path = ../TableViewController.h; sourceTree = "<group>"; };
 		272327091A3A21A80014323E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
+		27AC7EB71A3A86AD0070E8E8 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		27AC7EB81A3A86AD0070E8E8 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				272326ED1A39D3420014323E /* Images.xcassets */,
 				272326E01A39D3420014323E /* Supporting Files */,
 				272327061A3A17DF0014323E /* MainStoryboard.storyboard */,
+				27AC7EB71A3A86AD0070E8E8 /* BlogPost.h */,
+				27AC7EB81A3A86AD0070E8E8 /* BlogPost.m */,
 			);
 			path = "Blog Reader";
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				2723270A1A3A21A80014323E /* TableViewController.m in Sources */,
 				272326E61A39D3420014323E /* AppDelegate.m in Sources */,
 				272326E31A39D3420014323E /* main.m in Sources */,
+				27AC7EB91A3A86AD0070E8E8 /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +395,7 @@
 				272327021A39D3420014323E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		272327031A39D3420014323E /* Build configuration list for PBXNativeTarget "Blog ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -397,6 +404,7 @@
 				272327051A39D3420014323E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
