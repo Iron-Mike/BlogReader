@@ -28,6 +28,7 @@
     for (NSDictionary *bpDictionary in blogPostsArray) {
         BlogPost *blogPost = [BlogPost blogPostWithTitle:[bpDictionary objectForKey:@"title"]];
         blogPost.author = [bpDictionary objectForKey:@"author"];
+        blogPost.thumbnail = [bpDictionary objectForKey:@"thumbnail"];
         [self.blogPosts addObject:blogPost];
     }
     
@@ -59,8 +60,16 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: CellIdentifier forIndexPath:indexPath];
     
     BlogPost *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+    
+    if([blogPost.thumbnail isKindOfClass:[NSString class]]){
+        NSData *imageData = [NSData dataWithContentsOfURL:blogPost.thumbnailURL];
+        UIImage *image = [UIImage imageWithData:imageData];
+        cell.imageView.image = image;
+    }
+        
     cell.textLabel.text = blogPost.title;
     cell.detailTextLabel.text = blogPost.author;
+    
     return cell;
 }
 
