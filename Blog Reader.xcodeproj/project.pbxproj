@@ -14,6 +14,7 @@
 		272327071A3A17DF0014323E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 272327061A3A17DF0014323E /* MainStoryboard.storyboard */; };
 		2723270A1A3A21A80014323E /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 272327091A3A21A80014323E /* TableViewController.m */; };
 		27AC7EB91A3A86AD0070E8E8 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC7EB81A3A86AD0070E8E8 /* BlogPost.m */; };
+		27AC7EBC1A3BDC6B0070E8E8 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27AC7EBB1A3BDC6B0070E8E8 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 		272327091A3A21A80014323E /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TableViewController.m; path = ../TableViewController.m; sourceTree = "<group>"; };
 		27AC7EB71A3A86AD0070E8E8 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
 		27AC7EB81A3A86AD0070E8E8 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
+		27AC7EBA1A3BDC6B0070E8E8 /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		27AC7EBB1A3BDC6B0070E8E8 /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				272327061A3A17DF0014323E /* MainStoryboard.storyboard */,
 				27AC7EB71A3A86AD0070E8E8 /* BlogPost.h */,
 				27AC7EB81A3A86AD0070E8E8 /* BlogPost.m */,
+				27AC7EBA1A3BDC6B0070E8E8 /* WebViewController.h */,
+				27AC7EBB1A3BDC6B0070E8E8 /* WebViewController.m */,
 			);
 			path = "Blog Reader";
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2723270A1A3A21A80014323E /* TableViewController.m in Sources */,
+				27AC7EBC1A3BDC6B0070E8E8 /* WebViewController.m in Sources */,
 				272326E61A39D3420014323E /* AppDelegate.m in Sources */,
 				272326E31A39D3420014323E /* main.m in Sources */,
 				27AC7EB91A3A86AD0070E8E8 /* BlogPost.m in Sources */,
